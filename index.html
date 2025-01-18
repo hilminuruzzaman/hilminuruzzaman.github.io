@@ -1,54 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Hilmi's webpage</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hilmi's Webpage</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Hilmi Nuruzzaman</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Hilmi Nuruzzaman</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="Hilmi Profile picture">
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Hilmi Nuruzzaman</h1>
+      <p class="section__text__p2">Aerospace Engineering Student</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')"
+        >
+        Download CV
+      </button>
+      <button class="btn btn-color-1" onclick="location.href='./#contact'"
+        >
+        Contact Info
+      </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile"
+        class="icon" 
+        onclick="location.href='https://linkedin.com/in/hilmi-nuruzzaman'"
+        />
+
+        <img src="./assets/github.png" 
+        alt="My Github profile"
+        class="icon" 
+        onclick="location.href='https://github.com/hilminuruzzaman'"
+        />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Profile pic" class="about-pic">
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="experience icon" class="icon">
+            <h1>Experience</h1>
+            <p>Astronomy Tutor for National Olympiad (2020 - now) <br />Mission & Spacecraft Intern, Pasifik Satelit Nusantara (2023) 
+            <br />Teaching Assistant for Astronautics Course, Institut Teknologi Bandung (2024)</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="education icon" class="icon">
+            <h1>Education</h1>
+            <p>B.Sc. in Aerospace Engineering, <br /><a href="https://itb.ac.id/">Institut Teknologi Bandung</a> <br />High School Diploma in Natural Science, <br /><a href="https://ic.sch.id/">MAN Insan Cendekia Serpong</a></p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>I'm Hilmi, an aerospace engineering student with a specific interest in satellite design and technology.
+            I have been involved in numerous projects to design and analyze satellite systems, ranging from creating a star sensor system to predicting eclipse time and durations. </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Honors & Achievements</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" 
+              alt="experience icon" 
+              class="icon">
+              <div>
+                <h3>Absolute Winner</h3>
+                <p>National Science Olympiad in Astronomy (2018)</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" 
+              alt="experience icon" 
+              class="icon">
+              <div>
+                <h3>Silver Medal</h3>
+                <p>International Olympiad in Astronomy and Astrophysics (2019)</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" 
+              alt="experience icon" 
+              class="icon">
+              <div>
+                <h3>Awardee</h3>
+                <p>Beasiswa Unggulan Scolarship (2020 - 2024)</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" 
+              alt="experience icon" 
+              class="icon">
+              <div>
+                <h3>Presenter</h3>
+                <p>1st International Conference on Space Science, Technology, and Innovation (2024)</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Skills</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" 
+              alt="experience icon" 
+              class="icon">
+              <div>
+              <h3>PostgreSQL</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" 
+              alt="experience icon" 
+              class="icon">
+              <div>
+                <h3>BLABLA</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" 
+              alt="experience icon" 
+              class="icon">
+              <div>
+                <h3>EDIt INI JGN LUPA</h3>
+                <p>Mid</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" 
+              alt="experience icon" 
+              class="icon">
+              <div>
+                <h3>edit</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">Project One</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            Live Demo
+          </button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">Project Two</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            Live Demo
+          </button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/project-3.png" alt="Project 3" class="project-img">
+        </div>
+        <h2 class="experience-sub-title project-title">Project Three</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            Live Demo
+          </button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+        <p><a href="mailto:hilmizaman2002@gmail.com">hilmizaman2002@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+        <p><a href="https://www.linkedin.com/in/hilmi-nuruzzaman">LinkedIn</a></p>
+      </div>
+    </div>
+
+  </section>
+  <footer>
     <nav>
-      <div class="nav__content">
-        <div class="logo"><a href="#">Hilmi's Web Page</a></div>
-        <label for="check" class="checkbox">
-          <i class="ri-menu-line"></i>
-        </label>
-        <input type="checkbox" name="check" id="check" />
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <section class="section">
-      <div class="section__container">
-        <div class="content">
-          <p class="subtitle">HELLO</p>
-          <h1 class="title">
-            I'm <span>Hilmi Nuruzzaman,<br />an</span> Aerospace Engineering student
-          </h1>
-          <p class="description">
-            Welcome to my web portfolio. I'm Hilmi, an aerospace engineering student with specific interest in satellite design and technology.
-            
-          </p>
-          <div class="action__btns">
-            <button class="portfolio">Portfolio</button>
-          </div>
-        </div>
-        <div class="image">
-          <img src="assets/pasfotokotak.jpg" alt="profile" />
-        </div>
-      </div>
-    </section>
-    <footer>
-        <p>&copy; 2025 [Your Name]. All Rights Reserved.</p>
-    </footer>
-  </body>
+    <p>Copyright &#169; 2025 Hilmi Nuruzzaman. All Rights Reserved</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
 </html>
