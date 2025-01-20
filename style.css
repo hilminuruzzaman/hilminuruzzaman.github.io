@@ -205,9 +205,18 @@ margin-bottom: 1rem;
 
 /* ICONS*/
 
+.icon-profile{
+  cursor: pointer;
+  height: 2rem;
+}
+
 .icon{
   cursor: pointer;
   height: 2rem;
+}
+
+.icon:hover{
+  cursor: default;
 }
 
 /* BUTTONS */
